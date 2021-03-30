@@ -1,0 +1,21 @@
+{
+  "name": "doc-validator",
+  "version": "1.0.0",
+  "author": "Nick McCurdy <nick@nickmccurdy.com> (https://nickmccurdy.com/)",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@babel/parser": "^7.13.13",
+    "marked": "^2.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
