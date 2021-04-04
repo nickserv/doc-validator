@@ -4,10 +4,19 @@
 
 ## Commands
 
-- `parse`
-- `type`
-- `run`
-- `test`
+### `parse`
+
+````js
+import { parse } from "doc-validator"
+
+parse('```js\nconsole.log("Hello, world!")\n```')
+````
+
+### `type`
+
+### `run`
+
+### `test`
 
 ## Test repositories from [cutenode](https://github.com/cutenode)
 

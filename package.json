@@ -4,6 +4,10 @@
   "author": "Nick McCurdy <nick@nickmccurdy.com> (https://nickmccurdy.com/)",
   "license": "ISC",
   "type": "module",
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=14.8.0"
+  },
   "dependencies": {
     "@babel/parser": "^7.13.13",
     "marked": "^2.0.1"
@@ -13,7 +17,7 @@
     "jest": "^26.6.3"
   },
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "doc-validator README.md && cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "prettier": {
     "semi": false
