@@ -7,7 +7,7 @@ export function parse(markdown) {
     .filter((token) => token.type === "code")
     .map((token) => token.text)
   for (const snippet of snippets) {
-    parser.parse(snippet)
+    parser.parse(snippet, { sourceType: "unambiguous" })
   }
   return snippets
 }
