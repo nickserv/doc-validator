@@ -18,7 +18,10 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "test": "prettier --check . && doc-validator README.md && cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "yarn test:format && yarn test:dogfood && yarn test:unit",
+    "test:format": "prettier --check .",
+    "test:dogfood": "doc-validator README.md",
+    "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "prettier": {
     "semi": false
