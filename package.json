@@ -17,7 +17,7 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "test": "prettier --check . && doc-validator README.md && NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "doc-validator README.md && NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "prettier": {
     "semi": false
