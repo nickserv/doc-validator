@@ -8,11 +8,13 @@ async function getStdin() {
   return result
 }
 
-const fs = fsCallbacks.promises
-const path = process.argv[2]
-const text = path
-  ? await fs.readFile(path, { encoding: "utf8" })
-  : await getStdin()
-const errors = await parse(text)
-for (const error of errors) console.error(error)
-if (errors.length) process.exitCode = 1
+;(async () => {
+  const fs = fsCallbacks.promises
+  const path = process.argv[2]
+  const text = path
+    ? await fs.readFile(path, { encoding: "utf8" })
+    : await getStdin()
+  const errors = await parse(text)
+  for (const error of errors) console.error(error)
+  if (errors.length) process.exitCode = 1
+})()
