@@ -5,17 +5,19 @@ function js(src) {
 }
 
 describe("parse", () => {
-  test("parses valid JS", () => {
+  test("parses valid JS", async () => {
     const src = 'console.log("Hello, world!")'
-    expect(parse(js(src))).toEqual([src])
+    expect(await parse(js(src))).toEqual([])
   })
 
-  test("does not parse invalid JS", () => {
-    expect(() => parse(js('console.log("Whoops'))).toThrow(SyntaxError)
+  test("does not parse invalid JS", async () => {
+    expect(await parse(js('console.log("Whoops'))).toEqual([
+      expect.any(SyntaxError),
+    ])
   })
 
-  test("skips parsing other languages", () => {
-    expect(parse("```\n.\n```")).toEqual([])
-    expect(parse("```sh\n.\n```")).toEqual([])
+  test("skips parsing other languages", async () => {
+    expect(await parse("```\n.\n```")).toEqual([])
+    expect(await parse("```sh\n.\n```")).toEqual([])
   })
 })

@@ -9,7 +9,7 @@
 ````js
 import { parse } from "doc-validator"
 
-parse('```js\nconsole.log("Hello, world!")\n```')
+await parse('```js\nconsole.log("Hello, world!")\n```')
 ````
 
 ### `type`

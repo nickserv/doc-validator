@@ -13,4 +13,5 @@ const path = process.argv[2]
 const text = path
   ? await fs.readFile(path, { encoding: "utf8" })
   : await getStdin()
-parse(text)
+const errors = await parse(text)
+for (const error of errors) console.error(error)
