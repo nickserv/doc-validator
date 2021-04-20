@@ -4,9 +4,21 @@ A library/tool for validating JavaScript code in Markdown documentation
 
 ## [Inspiration](https://twitter.com/bitandbang/status/1375534850506129418)
 
-## Commands
+## Usage
+
+### Library
+
+Install `doc-validator` as a dependency. All commands take a Markdown source string and return an Array of any Errors reported. Errors are not thrown to make it easier to detect multiple errors from separate JavaScript code examples in the same file, so you will probably want to print or throw them.
+
+### Tool
+
+Install `doc-validator` globally for any project, or as a local development dependency for CI and test scripts. Use with a filename like `doc-validator README.md` to parse existing Markdown files, or pass stdin with no arguments for advanced scripting.
+
+## API
 
 ### `parse`
+
+Parses JavaScript using Babel. Modern standardized syntax is supported, including ES modules and top level await (both supported by Node).
 
 ````js
 import { parse } from "doc-validator"
@@ -14,8 +26,8 @@ import { parse } from "doc-validator"
 await parse('```js\nconsole.log("Hello, world!")\n```')
 ````
 
-### `type`
+### Planned
 
-### `run`
-
-### `test`
+- `type`
+- `run`
+- `test`
