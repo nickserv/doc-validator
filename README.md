@@ -27,7 +27,9 @@ Parses JavaScript using Babel. Modern standardized syntax is supported, includin
 ````js
 import { parse } from "doc-validator"
 
-await parse('```js\nconsole.log("Hello, world!")\n```')
+;(async () => {
+  await parse('```js\nconsole.log("Hello, world!")\n```')
+})()
 ````
 
 ### Planned
