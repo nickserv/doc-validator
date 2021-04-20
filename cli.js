@@ -15,3 +15,4 @@ const text = path
   : await getStdin()
 const errors = await parse(text)
 for (const error of errors) console.error(error)
+if (errors.length) process.exitCode = 1
