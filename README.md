@@ -20,6 +20,8 @@ await parse('```js\nconsole.log("Hello, world!")\n```')
 
 ## Test repositories from [cutenode](https://github.com/cutenode)
 
+Run `./example.sh` from the root directory of the repository to test the following package repositories:
+
 - [`conformance`](https://github.com/cutenode/conformance)
 - [`encites`](https://github.com/cutenode/encites)
 - [`libgfi`](https://github.com/cutenode/libgfi)
