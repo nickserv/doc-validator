@@ -1,5 +1,7 @@
 # `doc-validator`
 
+A library/tool for validating JavaScript code in Markdown documentation
+
 ## [Inspiration](https://twitter.com/bitandbang/status/1375534850506129418)
 
 ## Commands
