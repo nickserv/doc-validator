@@ -4,6 +4,10 @@ A library/tool for validating JavaScript code in Markdown documentation
 
 ## [Inspiration](https://twitter.com/bitandbang/status/1375534850506129418)
 
+## Status
+
+In development. JavaScript code in Markdown documentation can be parsed via the API or CLI, but there is no support for running code yet (see [1.0.0 milestone](https://github.com/nickmccurdy/doc-validator/milestone/1)).
+
 ## Usage
 
 ### Library
