@@ -6,6 +6,7 @@
   "license": "ISC",
   "type": "module",
   "bin": "cli.js",
+  "repository": "nickmccurdy/doc-validator",
   "engines": {
     "node": ">=14.8.0"
   },
