@@ -7,10 +7,7 @@ export async function parse(markdown) {
     .filter((token) => token.type === "code" && token.lang === "js")
     .map((token) => token.text)
   const promises = snippets.map((snippet) =>
-    babel.parseAsync(snippet, {
-      plugins: ["@babel/plugin-syntax-top-level-await"],
-      sourceType: "unambiguous",
-    })
+    babel.parseAsync(snippet, { sourceType: "unambiguous" })
   )
   return (await Promise.allSettled(promises))
     .filter((result) => result.status === "rejected")
