@@ -22,7 +22,7 @@ Install `doc-validator` globally for any project, or as a local development depe
 
 ### `parse`
 
-Parses JavaScript using Babel. Modern standardized syntax is supported, including ES modules and top level await (both supported by Node).
+Parses JavaScript using Babel. Modern standardized syntax is supported, including ES modules (supported by Node).
 
 ````js
 import { parse } from "doc-validator"
