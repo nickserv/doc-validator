@@ -16,7 +16,7 @@ Install `doc-validator` as a dependency. All commands take a Markdown source str
 
 ### Tool
 
-Install `doc-validator` globally for any project, or as a local development dependency for CI and test scripts. Use with a filename like `doc-validator README.md` to parse existing Markdown files, or pass stdin with no arguments for advanced scripting.
+Install `doc-validator` globally for any project, or as a local development dependency for CI and test scripts. Use with a filename like `doc-validator parse README.md` to parse existing Markdown files, or pass stdin with no path argument for advanced scripting.
 
 ## API
 

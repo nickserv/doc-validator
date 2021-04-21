@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.13.14",
+    "commander": "^7.2.0",
     "marked": "^2.0.1"
   },
   "devDependencies": {
@@ -22,7 +23,7 @@
   "scripts": {
     "test": "yarn test:format && yarn test:dogfood && yarn test:unit",
     "test:format": "prettier --check .",
-    "test:dogfood": "doc-validator README.md",
+    "test:dogfood": "doc-validator parse README.md",
     "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "prettier": {
