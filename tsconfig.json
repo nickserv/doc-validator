@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "lib": ["es2020"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
