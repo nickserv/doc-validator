@@ -4,7 +4,6 @@
   "description": "A library/tool for validating JavaScript code in Markdown documentation",
   "author": "Nick McCurdy <nick@nickmccurdy.com> (https://nickmccurdy.com/)",
   "license": "ISC",
-  "type": "module",
   "bin": "cli.js",
   "repository": "nickmccurdy/doc-validator",
   "engines": {
@@ -16,7 +15,6 @@
     "marked": "^2.0.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "jest": "^26.6.3",
     "prettier": "^2.2.1"
   },
@@ -24,7 +22,7 @@
     "test": "yarn test:format && yarn test:dogfood && yarn test:unit",
     "test:format": "prettier --check .",
     "test:dogfood": "doc-validator parse README.md",
-    "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test:unit": "jest"
   },
   "prettier": {
     "semi": false

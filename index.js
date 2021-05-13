@@ -1,7 +1,7 @@
-import marked from "marked"
-import babel from "@babel/core"
+const marked = require("marked")
+const babel = require("@babel/core")
 
-export async function parse(markdown) {
+exports.parse = async (markdown) => {
   const snippets = marked
     .lexer(markdown)
     .filter((token) => token.type === "code" && token.lang === "js")

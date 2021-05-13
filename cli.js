@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import { parse } from "./index.js"
-import { program } from "commander"
-import fsCallbacks from "fs"
-const fs = fsCallbacks.promises
+const { parse } = require()
+const { program } = require("commander")
+const fs = require("fs").promises
 
 async function getStdin() {
   let result = ""
