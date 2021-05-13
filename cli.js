@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { parse } = require()
+const { parse } = require(".")
 const { program } = require("commander")
 const fs = require("fs").promises
 

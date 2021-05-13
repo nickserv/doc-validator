@@ -1,4 +1,4 @@
-const { parse } = require()
+const { parse } = require(".")
 
 function js(src) {
   return `\`\`\`js\n${src}\n\`\`\``
