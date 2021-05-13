@@ -1,6 +1,6 @@
 {
   "name": "doc-validator",
-  "version": "0.2.0",
+  "version": "0.3.0-0",
   "description": "A library/tool for validating JavaScript code in Markdown documentation",
   "author": "Nick McCurdy <nick@nickmccurdy.com> (https://nickmccurdy.com/)",
   "license": "ISC",
